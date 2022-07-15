@@ -1,0 +1,38 @@
+<%= require('@parts/header.ejs')({title: 'Frontpage' }) %>
+
+  <main class="homepage" id="root">
+     <section class="page404">
+        <div class="container">
+            <div class="breadcrumbs">
+                <a href="">
+                    Главная
+                </a>
+                <span>
+                    Страница не найдена - 404 
+                </span>
+            </div>
+            <div class="page404__row">
+                <div class="page404__content page404__col">
+                    <h2 class="page404__title">
+                        <span>
+                            Страница не найдена
+                        </span>
+                        Извините, страница которую
+                        вы ищите не существует
+                    </h2>
+                    <p class="page404__txt">
+                        Мы предлагаем пакетные тарифы на бухгалтерское сопровождение. Услуги, оказываемые в рамках тарифа, будут зафиксированы в договоре на бухгалтерское сопровождение.
+                    </p>
+                    <a href="/" class="page404__btn">
+                        Вернуться на главную
+                    </a>
+                </div>
+                <div class="page404__img page404__col">
+                    <img src="<%=require('@img/404.svg') %>" alt="">
+                </div>
+            </div>
+        </div>
+     </section>
+  </main>
+
+  <%= require('@parts/footer.ejs')() %>

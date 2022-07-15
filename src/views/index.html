@@ -1,0 +1,2247 @@
+<%= require('@parts/header.ejs')({title: 'Frontpage' }) %>
+
+  <main class="homepage" id="root">
+      <section class="banner">
+        <div class="banner__bg">
+            <img src="<%=require('@img/banner.svg') %>" alt="">
+        </div>
+        <div class="container banner__content">
+            <h1 class="banner__title">
+                Бухгалтерский консалтинг <br>
+                по всей России
+            </h1>
+            <p class="banner__txt">
+                Фиксированные цены и ответ на запрос в течение 45 минут
+            </p>
+            <form class="banner__form">
+                <div class="banner__form-control">
+                    <p class="banner__form-label">
+                        Ваше имя*
+                    </p>
+                    <input type="text" class="banner__form-input" placeholder="Сергей I">
+                </div>
+                <div class="banner__form-control">
+                    <p class="banner__form-label">
+                        Номер телефона
+                    </p>
+                    <input type="tel" class="banner__form-input" placeholder="8 ХХХ ХХХ ХХ ХХ">
+                </div>
+                <div class="banner__form-button">
+                    <button class="banner__form-submit">
+                        Получить консультацию
+                    </button>
+                </div>
+            </form>
+        </div>
+      </section>
+      <section class="about">
+        <div class="container">
+            <div class="about__row">
+                <div class="about__content">
+                    <h2 class="about__title">
+                        <span>
+                            О компании
+                        </span>
+                        Консалтинг Плюс – это бухгалтерские услуги по всей России
+                    </h2>
+                    <p class="about__txt">
+                        Мы работаем с 2014 года и за это время обрели клиентов из 15 регионов РФ. Наша работа – бухгалтерия «на удаленке» в любой системе налогообложения, налоговые отчеты, регистрация ИП и ООО и консультации без сложных формулировок
+                    </p>
+                    <div class="about__men">
+                        <div class="about__men-img">
+                            <img src="<%=require('@img/about-ava.png') %>" alt="">
+                        </div>
+                        <div class="about__men-content">
+                            <h3 class="about__men-name">
+                                Иван Сергеевич
+                            </h3>
+                            <p class="about__men-txt">
+                                “В нашем деле главное это самоотдача”
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about__img">
+                    <img src="<%=require('@img/about-img.jpg') %>" alt="">
+                </div>
+            </div>
+        </div>
+      </section>
+      <section class="features">
+        <div class="container">
+            <h2 class="features__title">
+                <span>
+                    Преимущества
+                </span>
+                С нами вам будет комфортно
+            </h2>
+            <div class="features__row">
+                <div class="features__item">
+                    <div class="features__item-img">
+                        <img src="<%=require('@img/features-1.png') %>" alt="">
+                    </div>
+                    <h3 class="features__item-title">
+                        Отвечаем быстро
+                    </h3>
+                    <p class="features__item-txt">
+                        Ответим на ваш запрос в течение 45 минут. Скорость подтверждена опросом наших клиентов.
+                    </p>
+                </div>
+                <div class="features__item">
+                    <div class="features__item-img">
+                        <img src="<%=require('@img/features-2.png') %>" alt="">
+                    </div>
+                    <h3 class="features__item-title">
+                        Работаем удаленно
+                    </h3>
+                    <p class="features__item-txt">
+                        Оказываем услуги клиентам более чем из 15 регионов России полностью удаленно.
+                    </p>
+                </div>
+                <div class="features__item">
+                    <div class="features__item-img">
+                        <img src="<%=require('@img/features-3.png') %>" alt="">
+                    </div>
+                    <h3 class="features__item-title">
+                        Фиксируем цены
+                    </h3>
+                    <p class="features__item-txt">
+                        Прайс на пакеты услуг зафиксирован. С нами не будет неприятных «сюрпризов». 
+                    </p>
+                </div>
+                <div class="features__item">
+                    <div class="features__item-img">
+                        <img src="<%=require('@img/features-4.png') %>" alt="">
+                    </div>
+                    <h3 class="features__item-title">
+                        Консультируем честно
+                    </h3>
+                    <p class="features__item-txt">
+                        Даем консультации по вашему запросу, но не навязываем дополнительных опций.
+                    </p>
+                </div>
+                <div class="features__item">
+                    <div class="features__item-img">
+                        <img src="<%=require('@img/features-5.png') %>" alt="">
+                    </div>
+                    <h3 class="features__item-title">
+                        Экономим ваш бюджет
+                    </h3>
+                    <p class="features__item-txt">
+                        Сэкономили более 5 млн рублей клиентов благодаря разумному налоговому планированию.
+                    </p>
+                </div>
+                <div class="features__item">
+                    <div class="features__item-img">
+                        <img src="<%=require('@img/features-6.png') %>" alt="">
+                    </div>
+                    <h3 class="features__item-title">
+                        Гарантируем точность
+                    </h3>
+                    <p class="features__item-txt">
+                        Каждый отчет проходит ручную проверку у нескольких наших экспертов, чтобы избежать неточностей и ошибок.
+                    </p>
+                </div>
+            </div>
+        </div>
+      </section>
+      <section class="plans">
+        <div class="container">
+            <h2 class="plans__title">
+                <span>
+                    Тарифы
+                </span>
+                Выберите тариф для вашего бизнеса
+            </h2>
+            <div class="plans__wrapper">
+                <ul class="plans__nav">
+                    <li class="active">ИП с сотрудниками</li>
+                    <li>ИП без сотрудников</li>
+                    <li>ООО</li>
+                </ul>
+                <div class="plans__block active">
+                    <div class="plans__table">
+                        <div class="plans__table-row plans__table-row_header">
+                            <div class="plans__table-col plans__table-col_lg plans__table-col_head">
+
+                            </div>
+                            <div class="plans__table-col plans__table-col_head">
+                                <p>
+                                    Тариф “Проект”
+                                </p>
+                            </div>
+                            <div class="plans__table-col plans__table-col_head">
+                                <p>
+                                    Тариф “Дело”
+                                </p>
+                            </div>
+                            <div class="plans__table-col plans__table-col_head">
+                                <p>
+                                    Тариф “Компания”
+                                </p>
+                            </div>
+                            <div class="plans__table-col plans__table-col_head">
+                                <p>
+                                    Тариф “Бизнес”
+                                </p>
+                            </div>
+                        </div>
+                        <div class="plans__table-row">
+                            <div class="plans__table-col plans__table-col_lg">
+                                <span>
+                                    Стоимость
+                                </span>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                        </div>
+                        <div class="plans__table-row">
+                            <div class="plans__table-col plans__table-col_lg">
+                                <span>
+                                    О тарифе
+                                </span>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                        </div>
+                        <div class="plans__table-row">
+                            <div class="plans__table-col plans__table-col_lg">
+                                <span>
+                                    Обработка банковской выписки
+                                </span>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                        </div>
+                        <div class="plans__table-row">
+                            <div class="plans__table-col plans__table-col_lg">
+                                <span>
+                                    Платежные поручения по зарплате
+                                </span>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                        </div>
+                        <div class="plans__table-row">
+                            <div class="plans__table-col plans__table-col_lg">
+                                <span>
+                                    Платежные поручения налогам и взносам
+                                </span>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                        </div>
+                        <div class="plans__table-row">
+                            <div class="plans__table-col plans__table-col_lg">
+                                <span>
+                                    Расчет квартальных налогов
+                                </span>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                        </div>
+                        <div class="plans__table-row">
+                            <div class="plans__table-col plans__table-col_lg">
+                                <span>
+                                    Начисление заработной платы
+                                </span>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                        </div>
+                        <div class="plans__table-row">
+                            <div class="plans__table-col plans__table-col_lg">
+                                <span>
+                                    Составление отчетности
+                                    по сотрудникам
+                                </span>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                        </div>
+                        <div class="plans__table-row plans__table-row_bottom">
+                            <div class="plans__table-col plans__table-col_lg plans__table-col plans__table-col_bottom plans__table-col_lgBottom">
+                            </div>
+                            <div class="plans__table-col plans__table-col_bottom plans__table-col">
+                                <p class="plans__table-price">
+                                    Стоимость <strong>15 000 ₽</strong>
+                                </p>
+                                <button class="plans__table-btn">
+                                    Выбрать
+                                </button>
+                            </div>
+                            <div class="plans__table-col plans__table-col_bottom plans__table-col">
+                                <p class="plans__table-price">
+                                    Стоимость <strong>15 000 ₽</strong>
+                                </p>
+                                <button class="plans__table-btn">
+                                    Выбрать
+                                </button>
+                            </div>
+                            <div class="plans__table-col plans__table-col_bottom plans__table-col">
+                                <p class="plans__table-price">
+                                    Стоимость <strong>15 000 ₽</strong>
+                                </p>
+                                <button class="plans__table-btn">
+                                    Выбрать
+                                </button>
+                            </div>
+                            <div class="plans__table-col plans__table-col_bottom plans__table-col">
+                                <p class="plans__table-price">
+                                    Стоимость <strong>15 000 ₽</strong>
+                                </p>
+                                <button class="plans__table-btn">
+                                    Выбрать
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper plans__slider">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide plans__slider-item plansItem">
+                            <h3 class="plansItem__title">
+                                Тариф “Проект”
+                            </h3>
+                            <div class="plansItem__row">
+                                <p class="plansItem__name">
+                                    Стоимость
+                                </p>
+                                <p class="plansItem__value">
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plansItem__row">
+                                <p class="plansItem__name">
+                                    О тарифе
+                                </p>
+                                <p class="plansItem__value">
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plansItem__row">
+                                <p class="plansItem__name">
+                                    Обработка банковской выписки
+                                </p>
+                                <p class="plansItem__value">
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plansItem__row">
+                                <p class="plansItem__name">
+                                    Платежные поручения по зарплате
+                                </p>
+                                <p class="plansItem__value">
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plansItem__row">
+                                <p class="plansItem__name">
+                                    Расчет квартальных налогов
+                                </p>
+                                <p class="plansItem__value">
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plansItem__row">
+                                <p class="plansItem__name">
+                                    Начисление заработной платы
+                                </p>
+                                <p class="plansItem__value">
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plansItem__row">
+                                <p class="plansItem__name">
+                                    Составление отчетности
+                                    по сотрудникам
+                                </p>
+                                <p class="plansItem__value">
+                                    Значение
+                                </p>
+                            </div>
+                            <p class="plansItem__price">
+                                Стоимость <strong>15 000 ₽</stron>
+                            </p>
+                            <button class="plansItem__btn">
+                                Выбрать
+                            </button>
+                          </div>
+                          <div class="swiper-slide plans__slider-item plansItem">
+                            <h3 class="plansItem__title">
+                                Тариф “Проект”
+                            </h3>
+                            <div class="plansItem__row">
+                                <p class="plansItem__name">
+                                    Стоимость
+                                </p>
+                                <p class="plansItem__value">
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plansItem__row">
+                                <p class="plansItem__name">
+                                    О тарифе
+                                </p>
+                                <p class="plansItem__value">
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plansItem__row">
+                                <p class="plansItem__name">
+                                    Обработка банковской выписки
+                                </p>
+                                <p class="plansItem__value">
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plansItem__row">
+                                <p class="plansItem__name">
+                                    Платежные поручения по зарплате
+                                </p>
+                                <p class="plansItem__value">
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plansItem__row">
+                                <p class="plansItem__name">
+                                    Расчет квартальных налогов
+                                </p>
+                                <p class="plansItem__value">
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plansItem__row">
+                                <p class="plansItem__name">
+                                    Начисление заработной платы
+                                </p>
+                                <p class="plansItem__value">
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plansItem__row">
+                                <p class="plansItem__name">
+                                    Составление отчетности
+                                    по сотрудникам
+                                </p>
+                                <p class="plansItem__value">
+                                    Значение
+                                </p>
+                            </div>
+                            <p class="plansItem__price">
+                                Стоимость <strong>15 000 ₽</stron>
+                            </p>
+                            <button class="plansItem__btn">
+                                Выбрать
+                            </button>
+                          </div>
+                          <div class="swiper-slide plans__slider-item plansItem">
+                            <h3 class="plansItem__title">
+                                Тариф “Проект”
+                            </h3>
+                            <div class="plansItem__row">
+                                <p class="plansItem__name">
+                                    Стоимость
+                                </p>
+                                <p class="plansItem__value">
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plansItem__row">
+                                <p class="plansItem__name">
+                                    О тарифе
+                                </p>
+                                <p class="plansItem__value">
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plansItem__row">
+                                <p class="plansItem__name">
+                                    Обработка банковской выписки
+                                </p>
+                                <p class="plansItem__value">
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plansItem__row">
+                                <p class="plansItem__name">
+                                    Платежные поручения по зарплате
+                                </p>
+                                <p class="plansItem__value">
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plansItem__row">
+                                <p class="plansItem__name">
+                                    Расчет квартальных налогов
+                                </p>
+                                <p class="plansItem__value">
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plansItem__row">
+                                <p class="plansItem__name">
+                                    Начисление заработной платы
+                                </p>
+                                <p class="plansItem__value">
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plansItem__row">
+                                <p class="plansItem__name">
+                                    Составление отчетности
+                                    по сотрудникам
+                                </p>
+                                <p class="plansItem__value">
+                                    Значение
+                                </p>
+                            </div>
+                            <p class="plansItem__price">
+                                Стоимость <strong>15 000 ₽</stron>
+                            </p>
+                            <button class="plansItem__btn">
+                                Выбрать
+                            </button>
+                          </div>
+                          <div class="swiper-slide plans__slider-item plansItem">
+                            <h3 class="plansItem__title">
+                                Тариф “Проект”
+                            </h3>
+                            <div class="plansItem__row">
+                                <p class="plansItem__name">
+                                    Стоимость
+                                </p>
+                                <p class="plansItem__value">
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plansItem__row">
+                                <p class="plansItem__name">
+                                    О тарифе
+                                </p>
+                                <p class="plansItem__value">
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plansItem__row">
+                                <p class="plansItem__name">
+                                    Обработка банковской выписки
+                                </p>
+                                <p class="plansItem__value">
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plansItem__row">
+                                <p class="plansItem__name">
+                                    Платежные поручения по зарплате
+                                </p>
+                                <p class="plansItem__value">
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plansItem__row">
+                                <p class="plansItem__name">
+                                    Расчет квартальных налогов
+                                </p>
+                                <p class="plansItem__value">
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plansItem__row">
+                                <p class="plansItem__name">
+                                    Начисление заработной платы
+                                </p>
+                                <p class="plansItem__value">
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plansItem__row">
+                                <p class="plansItem__name">
+                                    Составление отчетности
+                                    по сотрудникам
+                                </p>
+                                <p class="plansItem__value">
+                                    Значение
+                                </p>
+                            </div>
+                            <p class="plansItem__price">
+                                Стоимость <strong>15 000 ₽</stron>
+                            </p>
+                            <button class="plansItem__btn">
+                                Выбрать
+                            </button>
+                          </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                      </div>
+                </div>
+                <div class="plans__block">
+                    <div class="plans__table">
+                        <div class="plans__table-row plans__table-row_header">
+                            <div class="plans__table-col plans__table-col_lg plans__table-col_head">
+
+                            </div>
+                            <div class="plans__table-col plans__table-col_head">
+                                <p>
+                                    Тариф “Проект”
+                                </p>
+                            </div>
+                            <div class="plans__table-col plans__table-col_head">
+                                <p>
+                                    Тариф “Дело”
+                                </p>
+                            </div>
+                            <div class="plans__table-col plans__table-col_head">
+                                <p>
+                                    Тариф “Компания”
+                                </p>
+                            </div>
+                            <div class="plans__table-col plans__table-col_head">
+                                <p>
+                                    Тариф “Бизнес”
+                                </p>
+                            </div>
+                        </div>
+                        <div class="plans__table-row">
+                            <div class="plans__table-col plans__table-col_lg">
+                                <span>
+                                    Стоимость
+                                </span>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                        </div>
+                        <div class="plans__table-row">
+                            <div class="plans__table-col plans__table-col_lg">
+                                <span>
+                                    О тарифе
+                                </span>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                        </div>
+                        <div class="plans__table-row">
+                            <div class="plans__table-col plans__table-col_lg">
+                                <span>
+                                    Обработка банковской выписки
+                                </span>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                        </div>
+                        <div class="plans__table-row">
+                            <div class="plans__table-col plans__table-col_lg">
+                                <span>
+                                    Платежные поручения по зарплате
+                                </span>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                        </div>
+                        <div class="plans__table-row">
+                            <div class="plans__table-col plans__table-col_lg">
+                                <span>
+                                    Платежные поручения налогам и взносам
+                                </span>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                        </div>
+                        <div class="plans__table-row">
+                            <div class="plans__table-col plans__table-col_lg">
+                                <span>
+                                    Расчет квартальных налогов
+                                </span>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                        </div>
+                        <div class="plans__table-row">
+                            <div class="plans__table-col plans__table-col_lg">
+                                <span>
+                                    Начисление заработной платы
+                                </span>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                        </div>
+                        <div class="plans__table-row">
+                            <div class="plans__table-col plans__table-col_lg">
+                                <span>
+                                    Составление отчетности
+                                    по сотрудникам
+                                </span>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                        </div>
+                        <div class="plans__table-row plans__table-row_bottom">
+                            <div class="plans__table-col plans__table-col_lg plans__table-col plans__table-col_bottom plans__table-col_lgBottom">
+                            </div>
+                            <div class="plans__table-col plans__table-col_bottom plans__table-col">
+                                <p class="plans__table-price">
+                                    Стоимость <strong>15 000 ₽</strong>
+                                </p>
+                                <button class="plans__table-btn">
+                                    Выбрать
+                                </button>
+                            </div>
+                            <div class="plans__table-col plans__table-col_bottom plans__table-col">
+                                <p class="plans__table-price">
+                                    Стоимость <strong>15 000 ₽</strong>
+                                </p>
+                                <button class="plans__table-btn">
+                                    Выбрать
+                                </button>
+                            </div>
+                            <div class="plans__table-col plans__table-col_bottom plans__table-col">
+                                <p class="plans__table-price">
+                                    Стоимость <strong>15 000 ₽</strong>
+                                </p>
+                                <button class="plans__table-btn">
+                                    Выбрать
+                                </button>
+                            </div>
+                            <div class="plans__table-col plans__table-col_bottom plans__table-col">
+                                <p class="plans__table-price">
+                                    Стоимость <strong>15 000 ₽</strong>
+                                </p>
+                                <button class="plans__table-btn">
+                                    Выбрать
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper plans__slider">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide plans__slider-item plansItem">
+                            <h3 class="plansItem__title">
+                                Тариф “Проект”
+                            </h3>
+                            <div class="plansItem__row">
+                                <p class="plansItem__name">
+                                    Стоимость
+                                </p>
+                                <p class="plansItem__value">
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plansItem__row">
+                                <p class="plansItem__name">
+                                    О тарифе
+                                </p>
+                                <p class="plansItem__value">
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plansItem__row">
+                                <p class="plansItem__name">
+                                    Обработка банковской выписки
+                                </p>
+                                <p class="plansItem__value">
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plansItem__row">
+                                <p class="plansItem__name">
+                                    Платежные поручения по зарплате
+                                </p>
+                                <p class="plansItem__value">
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plansItem__row">
+                                <p class="plansItem__name">
+                                    Расчет квартальных налогов
+                                </p>
+                                <p class="plansItem__value">
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plansItem__row">
+                                <p class="plansItem__name">
+                                    Начисление заработной платы
+                                </p>
+                                <p class="plansItem__value">
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plansItem__row">
+                                <p class="plansItem__name">
+                                    Составление отчетности
+                                    по сотрудникам
+                                </p>
+                                <p class="plansItem__value">
+                                    Значение
+                                </p>
+                            </div>
+                            <p class="plansItem__price">
+                                Стоимость <strong>15 000 ₽</stron>
+                            </p>
+                            <button class="plansItem__btn">
+                                Выбрать
+                            </button>
+                          </div>
+                          <div class="swiper-slide plans__slider-item plansItem">
+                            <h3 class="plansItem__title">
+                                Тариф “Проект”
+                            </h3>
+                            <div class="plansItem__row">
+                                <p class="plansItem__name">
+                                    Стоимость
+                                </p>
+                                <p class="plansItem__value">
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plansItem__row">
+                                <p class="plansItem__name">
+                                    О тарифе
+                                </p>
+                                <p class="plansItem__value">
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plansItem__row">
+                                <p class="plansItem__name">
+                                    Обработка банковской выписки
+                                </p>
+                                <p class="plansItem__value">
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plansItem__row">
+                                <p class="plansItem__name">
+                                    Платежные поручения по зарплате
+                                </p>
+                                <p class="plansItem__value">
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plansItem__row">
+                                <p class="plansItem__name">
+                                    Расчет квартальных налогов
+                                </p>
+                                <p class="plansItem__value">
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plansItem__row">
+                                <p class="plansItem__name">
+                                    Начисление заработной платы
+                                </p>
+                                <p class="plansItem__value">
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plansItem__row">
+                                <p class="plansItem__name">
+                                    Составление отчетности
+                                    по сотрудникам
+                                </p>
+                                <p class="plansItem__value">
+                                    Значение
+                                </p>
+                            </div>
+                            <p class="plansItem__price">
+                                Стоимость <strong>15 000 ₽</stron>
+                            </p>
+                            <button class="plansItem__btn">
+                                Выбрать
+                            </button>
+                          </div>
+                          <div class="swiper-slide plans__slider-item plansItem">
+                            <h3 class="plansItem__title">
+                                Тариф “Проект”
+                            </h3>
+                            <div class="plansItem__row">
+                                <p class="plansItem__name">
+                                    Стоимость
+                                </p>
+                                <p class="plansItem__value">
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plansItem__row">
+                                <p class="plansItem__name">
+                                    О тарифе
+                                </p>
+                                <p class="plansItem__value">
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plansItem__row">
+                                <p class="plansItem__name">
+                                    Обработка банковской выписки
+                                </p>
+                                <p class="plansItem__value">
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plansItem__row">
+                                <p class="plansItem__name">
+                                    Платежные поручения по зарплате
+                                </p>
+                                <p class="plansItem__value">
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plansItem__row">
+                                <p class="plansItem__name">
+                                    Расчет квартальных налогов
+                                </p>
+                                <p class="plansItem__value">
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plansItem__row">
+                                <p class="plansItem__name">
+                                    Начисление заработной платы
+                                </p>
+                                <p class="plansItem__value">
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plansItem__row">
+                                <p class="plansItem__name">
+                                    Составление отчетности
+                                    по сотрудникам
+                                </p>
+                                <p class="plansItem__value">
+                                    Значение
+                                </p>
+                            </div>
+                            <p class="plansItem__price">
+                                Стоимость <strong>15 000 ₽</stron>
+                            </p>
+                            <button class="plansItem__btn">
+                                Выбрать
+                            </button>
+                          </div>
+                          <div class="swiper-slide plans__slider-item plansItem">
+                            <h3 class="plansItem__title">
+                                Тариф “Проект”
+                            </h3>
+                            <div class="plansItem__row">
+                                <p class="plansItem__name">
+                                    Стоимость
+                                </p>
+                                <p class="plansItem__value">
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plansItem__row">
+                                <p class="plansItem__name">
+                                    О тарифе
+                                </p>
+                                <p class="plansItem__value">
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plansItem__row">
+                                <p class="plansItem__name">
+                                    Обработка банковской выписки
+                                </p>
+                                <p class="plansItem__value">
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plansItem__row">
+                                <p class="plansItem__name">
+                                    Платежные поручения по зарплате
+                                </p>
+                                <p class="plansItem__value">
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plansItem__row">
+                                <p class="plansItem__name">
+                                    Расчет квартальных налогов
+                                </p>
+                                <p class="plansItem__value">
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plansItem__row">
+                                <p class="plansItem__name">
+                                    Начисление заработной платы
+                                </p>
+                                <p class="plansItem__value">
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plansItem__row">
+                                <p class="plansItem__name">
+                                    Составление отчетности
+                                    по сотрудникам
+                                </p>
+                                <p class="plansItem__value">
+                                    Значение
+                                </p>
+                            </div>
+                            <p class="plansItem__price">
+                                Стоимость <strong>15 000 ₽</stron>
+                            </p>
+                            <button class="plansItem__btn">
+                                Выбрать
+                            </button>
+                          </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                      </div>
+                </div>
+                <div class="plans__block">
+                    <div class="plans__table">
+                        <div class="plans__table-row plans__table-row_header">
+                            <div class="plans__table-col plans__table-col_lg plans__table-col_head">
+
+                            </div>
+                            <div class="plans__table-col plans__table-col_head">
+                                <p>
+                                    Тариф “Проект”
+                                </p>
+                            </div>
+                            <div class="plans__table-col plans__table-col_head">
+                                <p>
+                                    Тариф “Дело”
+                                </p>
+                            </div>
+                            <div class="plans__table-col plans__table-col_head">
+                                <p>
+                                    Тариф “Компания”
+                                </p>
+                            </div>
+                            <div class="plans__table-col plans__table-col_head">
+                                <p>
+                                    Тариф “Бизнес”
+                                </p>
+                            </div>
+                        </div>
+                        <div class="plans__table-row">
+                            <div class="plans__table-col plans__table-col_lg">
+                                <span>
+                                    Стоимость
+                                </span>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                        </div>
+                        <div class="plans__table-row">
+                            <div class="plans__table-col plans__table-col_lg">
+                                <span>
+                                    О тарифе
+                                </span>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                        </div>
+                        <div class="plans__table-row">
+                            <div class="plans__table-col plans__table-col_lg">
+                                <span>
+                                    Обработка банковской выписки
+                                </span>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                        </div>
+                        <div class="plans__table-row">
+                            <div class="plans__table-col plans__table-col_lg">
+                                <span>
+                                    Платежные поручения по зарплате
+                                </span>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                        </div>
+                        <div class="plans__table-row">
+                            <div class="plans__table-col plans__table-col_lg">
+                                <span>
+                                    Платежные поручения налогам и взносам
+                                </span>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                        </div>
+                        <div class="plans__table-row">
+                            <div class="plans__table-col plans__table-col_lg">
+                                <span>
+                                    Расчет квартальных налогов
+                                </span>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                        </div>
+                        <div class="plans__table-row">
+                            <div class="plans__table-col plans__table-col_lg">
+                                <span>
+                                    Начисление заработной платы
+                                </span>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                        </div>
+                        <div class="plans__table-row">
+                            <div class="plans__table-col plans__table-col_lg">
+                                <span>
+                                    Составление отчетности
+                                    по сотрудникам
+                                </span>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plans__table-col">
+                                <p>
+                                    Значение
+                                </p>
+                            </div>
+                        </div>
+                        <div class="plans__table-row plans__table-row_bottom">
+                            <div class="plans__table-col plans__table-col_lg plans__table-col plans__table-col_bottom plans__table-col_lgBottom">
+                            </div>
+                            <div class="plans__table-col plans__table-col_bottom plans__table-col">
+                                <p class="plans__table-price">
+                                    Стоимость <strong>15 000 ₽</strong>
+                                </p>
+                                <button class="plans__table-btn">
+                                    Выбрать
+                                </button>
+                            </div>
+                            <div class="plans__table-col plans__table-col_bottom plans__table-col">
+                                <p class="plans__table-price">
+                                    Стоимость <strong>15 000 ₽</strong>
+                                </p>
+                                <button class="plans__table-btn">
+                                    Выбрать
+                                </button>
+                            </div>
+                            <div class="plans__table-col plans__table-col_bottom plans__table-col">
+                                <p class="plans__table-price">
+                                    Стоимость <strong>15 000 ₽</strong>
+                                </p>
+                                <button class="plans__table-btn">
+                                    Выбрать
+                                </button>
+                            </div>
+                            <div class="plans__table-col plans__table-col_bottom plans__table-col">
+                                <p class="plans__table-price">
+                                    Стоимость <strong>15 000 ₽</strong>
+                                </p>
+                                <button class="plans__table-btn">
+                                    Выбрать
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper plans__slider">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide plans__slider-item plansItem">
+                            <h3 class="plansItem__title">
+                                Тариф “Проект”
+                            </h3>
+                            <div class="plansItem__row">
+                                <p class="plansItem__name">
+                                    Стоимость
+                                </p>
+                                <p class="plansItem__value">
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plansItem__row">
+                                <p class="plansItem__name">
+                                    О тарифе
+                                </p>
+                                <p class="plansItem__value">
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plansItem__row">
+                                <p class="plansItem__name">
+                                    Обработка банковской выписки
+                                </p>
+                                <p class="plansItem__value">
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plansItem__row">
+                                <p class="plansItem__name">
+                                    Платежные поручения по зарплате
+                                </p>
+                                <p class="plansItem__value">
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plansItem__row">
+                                <p class="plansItem__name">
+                                    Расчет квартальных налогов
+                                </p>
+                                <p class="plansItem__value">
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plansItem__row">
+                                <p class="plansItem__name">
+                                    Начисление заработной платы
+                                </p>
+                                <p class="plansItem__value">
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plansItem__row">
+                                <p class="plansItem__name">
+                                    Составление отчетности
+                                    по сотрудникам
+                                </p>
+                                <p class="plansItem__value">
+                                    Значение
+                                </p>
+                            </div>
+                            <p class="plansItem__price">
+                                Стоимость <strong>15 000 ₽</stron>
+                            </p>
+                            <button class="plansItem__btn">
+                                Выбрать
+                            </button>
+                          </div>
+                          <div class="swiper-slide plans__slider-item plansItem">
+                            <h3 class="plansItem__title">
+                                Тариф “Проект”
+                            </h3>
+                            <div class="plansItem__row">
+                                <p class="plansItem__name">
+                                    Стоимость
+                                </p>
+                                <p class="plansItem__value">
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plansItem__row">
+                                <p class="plansItem__name">
+                                    О тарифе
+                                </p>
+                                <p class="plansItem__value">
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plansItem__row">
+                                <p class="plansItem__name">
+                                    Обработка банковской выписки
+                                </p>
+                                <p class="plansItem__value">
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plansItem__row">
+                                <p class="plansItem__name">
+                                    Платежные поручения по зарплате
+                                </p>
+                                <p class="plansItem__value">
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plansItem__row">
+                                <p class="plansItem__name">
+                                    Расчет квартальных налогов
+                                </p>
+                                <p class="plansItem__value">
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plansItem__row">
+                                <p class="plansItem__name">
+                                    Начисление заработной платы
+                                </p>
+                                <p class="plansItem__value">
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plansItem__row">
+                                <p class="plansItem__name">
+                                    Составление отчетности
+                                    по сотрудникам
+                                </p>
+                                <p class="plansItem__value">
+                                    Значение
+                                </p>
+                            </div>
+                            <p class="plansItem__price">
+                                Стоимость <strong>15 000 ₽</stron>
+                            </p>
+                            <button class="plansItem__btn">
+                                Выбрать
+                            </button>
+                          </div>
+                          <div class="swiper-slide plans__slider-item plansItem">
+                            <h3 class="plansItem__title">
+                                Тариф “Проект”
+                            </h3>
+                            <div class="plansItem__row">
+                                <p class="plansItem__name">
+                                    Стоимость
+                                </p>
+                                <p class="plansItem__value">
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plansItem__row">
+                                <p class="plansItem__name">
+                                    О тарифе
+                                </p>
+                                <p class="plansItem__value">
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plansItem__row">
+                                <p class="plansItem__name">
+                                    Обработка банковской выписки
+                                </p>
+                                <p class="plansItem__value">
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plansItem__row">
+                                <p class="plansItem__name">
+                                    Платежные поручения по зарплате
+                                </p>
+                                <p class="plansItem__value">
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plansItem__row">
+                                <p class="plansItem__name">
+                                    Расчет квартальных налогов
+                                </p>
+                                <p class="plansItem__value">
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plansItem__row">
+                                <p class="plansItem__name">
+                                    Начисление заработной платы
+                                </p>
+                                <p class="plansItem__value">
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plansItem__row">
+                                <p class="plansItem__name">
+                                    Составление отчетности
+                                    по сотрудникам
+                                </p>
+                                <p class="plansItem__value">
+                                    Значение
+                                </p>
+                            </div>
+                            <p class="plansItem__price">
+                                Стоимость <strong>15 000 ₽</stron>
+                            </p>
+                            <button class="plansItem__btn">
+                                Выбрать
+                            </button>
+                          </div>
+                          <div class="swiper-slide plans__slider-item plansItem">
+                            <h3 class="plansItem__title">
+                                Тариф “Проект”
+                            </h3>
+                            <div class="plansItem__row">
+                                <p class="plansItem__name">
+                                    Стоимость
+                                </p>
+                                <p class="plansItem__value">
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plansItem__row">
+                                <p class="plansItem__name">
+                                    О тарифе
+                                </p>
+                                <p class="plansItem__value">
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plansItem__row">
+                                <p class="plansItem__name">
+                                    Обработка банковской выписки
+                                </p>
+                                <p class="plansItem__value">
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plansItem__row">
+                                <p class="plansItem__name">
+                                    Платежные поручения по зарплате
+                                </p>
+                                <p class="plansItem__value">
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plansItem__row">
+                                <p class="plansItem__name">
+                                    Расчет квартальных налогов
+                                </p>
+                                <p class="plansItem__value">
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plansItem__row">
+                                <p class="plansItem__name">
+                                    Начисление заработной платы
+                                </p>
+                                <p class="plansItem__value">
+                                    Значение
+                                </p>
+                            </div>
+                            <div class="plansItem__row">
+                                <p class="plansItem__name">
+                                    Составление отчетности
+                                    по сотрудникам
+                                </p>
+                                <p class="plansItem__value">
+                                    Значение
+                                </p>
+                            </div>
+                            <p class="plansItem__price">
+                                Стоимость <strong>15 000 ₽</stron>
+                            </p>
+                            <button class="plansItem__btn">
+                                Выбрать
+                            </button>
+                          </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                      </div>
+                </div>
+            </div>
+        </div>
+      </section>
+      <section class="gets">
+        <div class="container">
+            <div class="gets__row">
+                <div class="gets__content">
+                    <h2 class="gets__title">
+                        <span>
+                            Дополнительные услуги
+                        </span>
+                        Если вы не нашли подходящий тариф, загляните в раздел “Дополнительные услуги” или свяжитесь с нами, заполнив форму выше.”
+                    </h2>
+                    <button class="gets__btn">
+                        Перейти в раздел
+                    </button>
+                </div>
+                <div class="gets__img">
+                    <img src="<%=require('@img/gets.png') %>" alt="">
+                </div>
+            </div>
+        </div>
+      </section>
+      <section class="work">
+        <div class="container">
+            <div class="work__content">
+                <h2 class="work__title">
+                    <span>
+                        Как мы работаем
+                    </span>
+                    Уже 7 лет мы работаем удаленно
+                </h2>
+                <p class="work__txt">
+                    Уже 7 лет работаем удалённо... Процесс работы приятный и т.д.
+                </p>
+                <p class="work__txt">
+                    Вы передаете нам ваши первичные документы (через ЭДО или сканы), мы их обрабатываем и начинаем ведение бухгалтерского и налогового учета за вас.
+                </p>
+            </div>
+            <div class="work__stages workStages">
+                <div class="workStages__wrapper">
+                    <div class="workStages__item-wrapper">
+                        <div class="workStages__item workStages__item-1">
+                            <div class="workStages__block">
+                                <div class="workStages__ico">
+                                    <img src="<%=require('@img/work-stage-i.svg') %>" alt="">
+                                </div>
+                                <p class="workStages__txt">
+                                    Оставьте заявку на нашем сайте.
+                                </p>
+                                <p class="workStages__txt">
+                                    Мы ответим вам в течение 15-ти минут и подберем для вас подходящий тариф.
+                                </p>
+                                <button class="workStages__btn">
+                                    Получить консультацию
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="workStages__item-wrapper">
+                        <div class="workStages__item workStages__item-2">
+                            <div class="workStages__block">
+                                <div class="workStages__ico">
+                                    <img src="<%=require('@img/work-stage-i.svg') %>" alt="">
+                                </div>
+                                <p class="workStages__txt">
+                                    Вы передаете нам ваши первичные документы (через ЭДО или сканы), мы их обрабатываем и начинаем ведение бухгалтерского и налогового учета за вас.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="workStages__item-wrapper">
+                        <div class="workStages__item workStages__item-3">
+                            <div class="workStages__block">
+                                <div class="workStages__ico">
+                                    <img src="<%=require('@img/work-stage-i.svg') %>" alt="">
+                                </div>
+                                <p class="workStages__txt">
+                                    Мы предоставляем отчетность в ИФНС, ФСС, ПФР и Росстат, начисляем зарплату вашим сотрудникам, налоги и взносы в бюджет, консультируем по важным для вас вопросам простым языком.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="workStages__item-wrapper"></div>
+                    <div class="workStages__item-wrapper">
+                        <div class="workStages__item workStages__item-4 workStages__item-bottom">
+                            <div class="workStages__block">
+                                <div class="workStages__ico">
+                                    <img src="<%=require('@img/work-stage-i.svg') %>" alt="">
+                                </div>
+                                <p class="workStages__txt">
+                                    Составим договор и подпишем его удаленно с помощью ЭЦП
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="workStages__item-wrapper">
+                        <div class="workStages__item workStages__item-5 workStages__item-bottom">
+                            <div class="workStages__block">
+                                <div class="workStages__ico">
+                                    <img src="<%=require('@img/work-stage-i.svg') %>" alt="">
+                                </div>
+                                <p class="workStages__txt">
+                                    Вы занимаетесь развитием вашего бизнеса, мы – качественным ведением вашей бухгалтерии.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <!-- Контент в попапе по клику на кнопку в отзыве генерируется автоматически из данных карточки отзыва -->
+      <section class="reviews">
+        <div class="container">
+            <h2 class="reviews__title">
+                <span>Отзывы</span>
+                Мы гордимся каждым партнёрством
+            </h2>
+        </div>
+        <div class="swiper-controls container">
+            <div class="swiper-button-next">
+                <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.3536 4.35356C15.5488 4.15829 15.5488 3.84171 15.3536 3.64645L12.1716 0.464468C11.9763 0.269206 11.6597 0.269206 11.4645 0.464468C11.2692 0.65973 11.2692 0.976313 11.4645 1.17157L14.2929 4L11.4645 6.82843C11.2692 7.02369 11.2692 7.34027 11.4645 7.53554C11.6597 7.7308 11.9763 7.7308 12.1716 7.53554L15.3536 4.35356ZM-8.74228e-08 4.5L15 4.5L15 3.5L8.74228e-08 3.5L-8.74228e-08 4.5Z" fill="#000593"/>
+                </svg>                        
+            </div>
+            <div class="swiper-button-prev">
+                <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.646445 3.64645C0.451183 3.84171 0.451183 4.15829 0.646445 4.35355L3.82843 7.53553C4.02369 7.7308 4.34027 7.7308 4.53553 7.53553C4.7308 7.34027 4.7308 7.02369 4.53553 6.82843L1.70711 4L4.53553 1.17157C4.73079 0.976312 4.73079 0.659729 4.53553 0.464467C4.34027 0.269205 4.02369 0.269205 3.82843 0.464467L0.646445 3.64645ZM16 3.5L0.999999 3.5L0.999999 4.5L16 4.5L16 3.5Z" fill="#000593"/>
+                </svg>                        
+            </div>
+        </div>
+        <div class="container">
+            <div class="swiper reviews__slider reviewsSlider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="container">
+                        <div class="reviews__row">
+                            <div class="reviews__col">
+                                <div class="reviews__item reviewsItem">
+                                    <h4 class="reviewsItem__title">
+                                        Игорь Рыбаков
+                                    </h4>
+                                    <p class="reviewsItem__date">
+                                        Отзыв оставлен 11.02.2022
+                                    </p>
+                                    <div class="reviewsItem__txt-wrapper">
+                                        <p class="reviewsItem__txt">
+                                            Очень высокое качество фильмов, виден каждый волос на лице героев. Ты как будто сам в фильме - эффект присутствия. Рекомендую сходить сюда хоть раз, чтобы круто провести время и почувствовать атмосферу <br><br>
+                Очень высокое качество фильмов, виден каждый волос на лице героев. Ты как будто сам в фильме - эффект присутствия. Рекомендую сходить сюда хоть раз, чтобы круто провести время и почувствовать атмосферу <br><br>
+                Очень высокое качество фильмов, виден каждый волос на лице героев. Ты как будто сам в фильме - эффект присутствия. Рекомендую сходить сюда хоть раз, чтобы круто провести время и почувствовать атмосферу <br><br>
+                Очень высокое качество фильмов, виден каждый волос на лице героев. Ты как будто сам в фильме - эффект присутствия. Рекомендую сходить сюда хоть раз, чтобы круто провести время и почувствовать атмосферу <br><br>
+                                        </p>
+                                    </div>
+                                    <button class="reviewsItem__button">
+                                        Открыть полностью
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="reviews__col">
+                                <div class="reviews__item reviewsItem">
+                                    <h4 class="reviewsItem__title">
+                                        Игорь Рыбаков
+                                    </h4>
+                                    <p class="reviewsItem__date">
+                                        Отзыв оставлен 11.02.2022
+                                    </p>
+                                    <div class="reviewsItem__txt-wrapper">
+                                        <p class="reviewsItem__txt">
+                                            Очень высокое качество фильмов, виден каждый волос на лице героев. Ты как будто сам в фильме - эффект присутствия. Рекомендую сходить сюда хоть раз, чтобы круто провести время и почувствовать атмосферу <br><br>
+                Очень высокое качество фильмов, виден каждый волос на лице героев. Ты как будто сам в фильме - эффект присутствия. Рекомендую сходить сюда хоть раз, чтобы круто провести время и почувствовать атмосферу <br><br>
+                Очень высокое качество фильмов, виден каждый волос на лице героев. Ты как будто сам в фильме - эффект присутствия. Рекомендую сходить сюда хоть раз, чтобы круто провести время и почувствовать атмосферу <br><br>
+                Очень высокое качество фильмов, виден каждый волос на лице героев. Ты как будто сам в фильме - эффект присутствия. Рекомендую сходить сюда хоть раз, чтобы круто провести время и почувствовать атмосферу <br><br>
+                                        </p>
+                                    </div>
+                                    <button class="reviewsItem__button">
+                                        Открыть полностью
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="container">
+                        <div class="reviews__row">
+                            <div class="reviews__col">
+                                <div class="reviews__item reviewsItem">
+                                    <h4 class="reviewsItem__title">
+                                        Игорь Рыбаков
+                                    </h4>
+                                    <p class="reviewsItem__date">
+                                        Отзыв оставлен 11.02.2022
+                                    </p>
+                                    <div class="reviewsItem__txt-wrapper">
+                                        <p class="reviewsItem__txt">
+                                            Очень высокое качество фильмов, виден каждый волос на лице героев. Ты как будто сам в фильме - эффект присутствия. Рекомендую сходить сюда хоть раз, чтобы круто провести время и почувствовать атмосферу <br><br>
+                Очень высокое качество фильмов, виден каждый волос на лице героев. Ты как будто сам в фильме - эффект присутствия. Рекомендую сходить сюда хоть раз, чтобы круто провести время и почувствовать атмосферу <br><br>
+                Очень высокое качество фильмов, виден каждый волос на лице героев. Ты как будто сам в фильме - эффект присутствия. Рекомендую сходить сюда хоть раз, чтобы круто провести время и почувствовать атмосферу <br><br>
+                Очень высокое качество фильмов, виден каждый волос на лице героев. Ты как будто сам в фильме - эффект присутствия. Рекомендую сходить сюда хоть раз, чтобы круто провести время и почувствовать атмосферу <br><br>
+                                        </p>
+                                    </div>
+                                    <button class="reviewsItem__button">
+                                        Открыть полностью
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="reviews__col">
+                                <div class="reviews__item reviewsItem">
+                                    <h4 class="reviewsItem__title">
+                                        Игорь Рыбаков
+                                    </h4>
+                                    <p class="reviewsItem__date">
+                                        Отзыв оставлен 11.02.2022
+                                    </p>
+                                    <div class="reviewsItem__txt-wrapper">
+                                        <p class="reviewsItem__txt">
+                                            Очень высокое качество фильмов, виден каждый волос на лице героев. Ты как будто сам в фильме - эффект присутствия. Рекомендую сходить сюда хоть раз, чтобы круто провести время и почувствовать атмосферу <br><br>
+                Очень высокое качество фильмов, виден каждый волос на лице героев. Ты как будто сам в фильме - эффект присутствия. Рекомендую сходить сюда хоть раз, чтобы круто провести время и почувствовать атмосферу <br><br>
+                Очень высокое качество фильмов, виден каждый волос на лице героев. Ты как будто сам в фильме - эффект присутствия. Рекомендую сходить сюда хоть раз, чтобы круто провести время и почувствовать атмосферу <br><br>
+                Очень высокое качество фильмов, виден каждый волос на лице героев. Ты как будто сам в фильме - эффект присутствия. Рекомендую сходить сюда хоть раз, чтобы круто провести время и почувствовать атмосферу <br><br>
+                                        </p>
+                                    </div>
+                                    <button class="reviewsItem__button">
+                                        Открыть полностью
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="container">
+                        <div class="reviews__row">
+                            <div class="reviews__col">
+                                <div class="reviews__item reviewsItem">
+                                    <h4 class="reviewsItem__title">
+                                        Игорь Рыбаков
+                                    </h4>
+                                    <p class="reviewsItem__date">
+                                        Отзыв оставлен 11.02.2022
+                                    </p>
+                                    <div class="reviewsItem__txt-wrapper">
+                                        <p class="reviewsItem__txt">
+                                            Очень высокое качество фильмов, виден каждый волос на лице героев. Ты как будто сам в фильме - эффект присутствия. Рекомендую сходить сюда хоть раз, чтобы круто провести время и почувствовать атмосферу <br><br>
+                Очень высокое качество фильмов, виден каждый волос на лице героев. Ты как будто сам в фильме - эффект присутствия. Рекомендую сходить сюда хоть раз, чтобы круто провести время и почувствовать атмосферу <br><br>
+                Очень высокое качество фильмов, виден каждый волос на лице героев. Ты как будто сам в фильме - эффект присутствия. Рекомендую сходить сюда хоть раз, чтобы круто провести время и почувствовать атмосферу <br><br>
+                Очень высокое качество фильмов, виден каждый волос на лице героев. Ты как будто сам в фильме - эффект присутствия. Рекомендую сходить сюда хоть раз, чтобы круто провести время и почувствовать атмосферу <br><br>
+                                        </p>
+                                    </div>
+                                    <button class="reviewsItem__button">
+                                        Открыть полностью
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="reviews__col">
+                                <div class="reviews__item reviewsItem">
+                                    <h4 class="reviewsItem__title">
+                                        Игорь Рыбаков
+                                    </h4>
+                                    <p class="reviewsItem__date">
+                                        Отзыв оставлен 11.02.2022
+                                    </p>
+                                    <div class="reviewsItem__txt-wrapper">
+                                        <p class="reviewsItem__txt">
+                                            Очень высокое качество фильмов, виден каждый волос на лице героев. Ты как будто сам в фильме - эффект присутствия. Рекомендую сходить сюда хоть раз, чтобы круто провести время и почувствовать атмосферу <br><br>
+                Очень высокое качество фильмов, виден каждый волос на лице героев. Ты как будто сам в фильме - эффект присутствия. Рекомендую сходить сюда хоть раз, чтобы круто провести время и почувствовать атмосферу <br><br>
+                Очень высокое качество фильмов, виден каждый волос на лице героев. Ты как будто сам в фильме - эффект присутствия. Рекомендую сходить сюда хоть раз, чтобы круто провести время и почувствовать атмосферу <br><br>
+                Очень высокое качество фильмов, виден каждый волос на лице героев. Ты как будто сам в фильме - эффект присутствия. Рекомендую сходить сюда хоть раз, чтобы круто провести время и почувствовать атмосферу <br><br>
+                                        </p>
+                                    </div>
+                                    <button class="reviewsItem__button">
+                                        Открыть полностью
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="container">
+                        <div class="reviews__row">
+                            <div class="reviews__col">
+                                <div class="reviews__item reviewsItem">
+                                    <h4 class="reviewsItem__title">
+                                        Игорь Рыбаков
+                                    </h4>
+                                    <p class="reviewsItem__date">
+                                        Отзыв оставлен 11.02.2022
+                                    </p>
+                                    <div class="reviewsItem__txt-wrapper">
+                                        <p class="reviewsItem__txt">
+                                            Очень высокое качество фильмов, виден каждый волос на лице героев. Ты как будто сам в фильме - эффект присутствия. Рекомендую сходить сюда хоть раз, чтобы круто провести время и почувствовать атмосферу <br><br>
+                Очень высокое качество фильмов, виден каждый волос на лице героев. Ты как будто сам в фильме - эффект присутствия. Рекомендую сходить сюда хоть раз, чтобы круто провести время и почувствовать атмосферу <br><br>
+                Очень высокое качество фильмов, виден каждый волос на лице героев. Ты как будто сам в фильме - эффект присутствия. Рекомендую сходить сюда хоть раз, чтобы круто провести время и почувствовать атмосферу <br><br>
+                Очень высокое качество фильмов, виден каждый волос на лице героев. Ты как будто сам в фильме - эффект присутствия. Рекомендую сходить сюда хоть раз, чтобы круто провести время и почувствовать атмосферу <br><br>
+                                        </p>
+                                    </div>
+                                    <button class="reviewsItem__button">
+                                        Открыть полностью
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="reviews__col">
+                                <div class="reviews__item reviewsItem">
+                                    <h4 class="reviewsItem__title">
+                                        Игорь Рыбаков
+                                    </h4>
+                                    <p class="reviewsItem__date">
+                                        Отзыв оставлен 11.02.2022
+                                    </p>
+                                    <div class="reviewsItem__txt-wrapper">
+                                        <p class="reviewsItem__txt">
+                                            Очень высокое качество фильмов, виден каждый волос на лице героев. Ты как будто сам в фильме - эффект присутствия. Рекомендую сходить сюда хоть раз, чтобы круто провести время и почувствовать атмосферу <br><br>
+                Очень высокое качество фильмов, виден каждый волос на лице героев. Ты как будто сам в фильме - эффект присутствия. Рекомендую сходить сюда хоть раз, чтобы круто провести время и почувствовать атмосферу <br><br>
+                Очень высокое качество фильмов, виден каждый волос на лице героев. Ты как будто сам в фильме - эффект присутствия. Рекомендую сходить сюда хоть раз, чтобы круто провести время и почувствовать атмосферу <br><br>
+                Очень высокое качество фильмов, виден каждый волос на лице героев. Ты как будто сам в фильме - эффект присутствия. Рекомендую сходить сюда хоть раз, чтобы круто провести время и почувствовать атмосферу <br><br>
+                                        </p>
+                                    </div>
+                                    <button class="reviewsItem__button">
+                                        Открыть полностью
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+          <div class="reviewsSlider-pagination"></div>
+      </section>
+      <section class="faq">
+        <div class="container">
+            <div class="faq__row">
+                <div class="faq__content faq__col">
+                    <h2 class="faq__title">
+                        <span>
+                            FAQ
+                        </span>
+                        Вопросы и ответы на них
+                    </h2>
+                    <div class="faq__wrapper faq-wrapper">
+                        <div class="faq__block faqBlock">
+                            <button class="faqBlock__header active">
+                                <p>
+                                    Сколько стоят бухгалтерские услуги и что входит в цену? 
+                                </p>
+                                <i>
+                                    <span></span><span></span>
+                                </i>
+                            </button>
+                            <div class="faqBlock__content">
+                                <div class="faqBlock__wrapper">
+                                    <p>
+                                        Мы предлагаем пакетные тарифы на бухгалтерское сопровождение. Услуги, оказываемые в рамках тарифа, будут зафиксированы в договоре на бухгалтерское сопровождение.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq__block faqBlock">
+                            <button class="faqBlock__header">
+                                <p>
+                                    Нужно ли мне оплачивать что-то дополнительно?
+                                </p>
+                                <i>
+                                    <span></span><span></span>
+                                </i>
+                            </button>
+                            <div class="faqBlock__content">
+                                <div class="faqBlock__wrapper">
+                                    <p>
+                                        Мы предлагаем пакетные тарифы на бухгалтерское сопровождение. Услуги, оказываемые в рамках тарифа, будут зафиксированы в договоре на бухгалтерское сопровождение.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq__block faqBlock">
+                            <button class="faqBlock__header">
+                                <p>
+                                    Нужен ли Вам доступ к моему банковскому счету?
+                                </p>
+                                <i>
+                                    <span></span><span></span>
+                                </i>
+                            </button>
+                            <div class="faqBlock__content">
+                                <div class="faqBlock__wrapper">
+                                    <p>
+                                        Мы предлагаем пакетные тарифы на бухгалтерское сопровождение. Услуги, оказываемые в рамках тарифа, будут зафиксированы в договоре на бухгалтерское сопровождение.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="" class="faq__btn">
+                            Перейти в раздел
+                        </a>
+                    </div>
+                </div>
+                <div class="faq__img faq__col">
+                    <img src="<%=require('@img/faq-img.svg') %>" alt="">
+                </div>
+            </div>
+        </div>
+      </section>
+  </main>
+
+  <%= require('@parts/footer.ejs')() %>

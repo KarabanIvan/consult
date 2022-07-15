@@ -1,0 +1,34 @@
+<%= require('@parts/header.ejs')({title: 'Frontpage' }) %>
+
+  <main class="homepage" id="root">
+     <section class="thank">
+        <div class="container">
+            <div class="breadcrumbs">
+                <a href="">
+                    Главная
+                </a>
+                <span>
+                    Страница благодарности
+                </span>
+            </div>
+            <div class="thank__row">
+                <div class="thank__content thank__col">
+                    <h2 class="thank__title">
+                        <span>
+                            Спасибо за заявку
+                        </span>
+                        Наш менеджер свяжется с вами в течении 1 минуты и проконсультирует по любому вопросу
+                    </h2>
+                    <a href="/" class="thank__btn">
+                        Вернуться на главную
+                    </a>
+                </div>
+                <div class="thank__img thank__col">
+                    <img src="<%=require('@img/thank.svg') %>" alt="">
+                </div>
+            </div>
+        </div>
+     </section>
+  </main>
+
+  <%= require('@parts/footer.ejs')() %>
